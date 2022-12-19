@@ -1,0 +1,12 @@
+version: '3.2'
+services:
+  miniconda-mlflow:
+    build: .
+    volumes:
+      - type: bind
+        source: "../mlruns"
+        target: "/workspace/mlruns"
+    working_dir: /workspace
+    command: mlflow ui --port=9998 --host=0.0.0.0
+    ports:
+      - "9998:9998"

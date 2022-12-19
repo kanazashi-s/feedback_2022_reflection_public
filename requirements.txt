@@ -1,0 +1,13 @@
+numpy
+matplotlib
+seaborn
+pandas
+pandas-profiling
+scikit-learn
+transformers
+datasets
+sentencepiece
+pytorch-lightning
+iterative-stratification
+mlflow
+kaggle
